@@ -2,12 +2,16 @@ window.addEventListener('load', function(){
 
     // referenciar elementos de la pagina
     const msgSuccess = this.document.getElementById('msgSuccess');
+<<<<<<< HEAD
     const btnCierreSesion = this.document.getElementById("btnCierreSesion");
+=======
+>>>>>>> e1747b87136f4c70eecc5cdb7241240c13c5642a
 
     // recuperar nombre del usuario del localStorage
     const result = JSON.parse(this.localStorage.getItem('result'));
     mostrarAlerta(`Bienvenido ${result.nombreUsuario}`);
 
+<<<<<<< HEAD
     //obtener numero documento y tipo documento
     var tipoDoc = "";
     var numDoc = ""; 
@@ -22,6 +26,8 @@ window.addEventListener('load', function(){
     
       });
 
+=======
+>>>>>>> e1747b87136f4c70eecc5cdb7241240c13c5642a
 });
 
 function mostrarAlerta(mensaje) {
@@ -32,6 +38,7 @@ function mostrarAlerta(mensaje) {
 function ocultarAlerta() {
     msgSuccess.innerHTML = '';
     msgSuccess.style.display = 'none';
+<<<<<<< HEAD
 }
 async function cerrarSesion(numDoc, tipoDoc) {
 
@@ -75,3 +82,6 @@ async function cerrarSesion(numDoc, tipoDoc) {
       mostrarAlerta('Error: Ocurrió un problema al cerrar Sesión.');
     }
   }
+=======
+}
+>>>>>>> e1747b87136f4c70eecc5cdb7241240c13c5642a
